@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Garage Gym</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+margin:10px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.cta{
+background:red;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#ff3333;
+}
+
+/* ABOUT */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.about-grid img{
+width:100%;
+border-radius:15px;
+}
+
+/* PRICING */
+
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.price{
+font-size:35px;
+margin:10px;
+color:#ff3333;
+}
+
+/* FACILITIES */
+
+.fac-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.fac{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+}
+
+/* SLIDER */
+
+.slider{
+width:100%;
+overflow:hidden;
+border-radius:20px;
+}
+
+.slides{
+display:flex;
+width:400%;
+animation:slide 16s infinite;
+}
+
+.slides img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+@keyframes slide{
+
+0%{transform:translateX(0)}
+25%{transform:translateX(0)}
+
+30%{transform:translateX(-100%)}
+50%{transform:translateX(-100%)}
+
+55%{transform:translateX(-200%)}
+75%{transform:translateX(-200%)}
+
+80%{transform:translateX(-300%)}
+100%{transform:translateX(-300%)}
+
+}
+
+/* BMI */
+
+input{
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 25px;
+background:red;
+border:none;
+color:white;
+border-radius:20px;
+}
+
+/* CONTACT */
+
+.contact-btn{
+display:inline-block;
+background:red;
+padding:12px 25px;
+margin:10px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Fitness Garage Gym</h1>
+<p>Build Strength • Build Confidence</p>
+
+<a href="#contact" class="cta">Join Now</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+
+<h2 class="section-title">About Gym</h2>
+
+<div class="about-grid">
+
+<div>
+
+<p>
+Fitness Garage Gym in Mahagama, Jharkhand is a modern fitness center
+with professional trainers and high quality machines.
+We help people achieve muscle gain, weight loss and strength goals.
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section>
+
+<h2 class="section-title">Membership Plans</h2>
+
+<div class="pricing-grid">
+
+<div class="card">
+<h3>Monthly</h3>
+<div class="price">₹800</div>
+<p>Full gym access</p>
+</div>
+
+<div class="card">
+<h3>3 Months</h3>
+<div class="price">₹2000</div>
+<p>Save ₹400</p>
+</div>
+
+<div class="card">
+<h3>6 Months</h3>
+<div class="price">₹3500</div>
+<p>Best value</p>
+</div>
+
+<div class="card">
+<h3>1 Year</h3>
+<div class="price">₹6000</div>
+<p>VIP membership</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FACILITIES -->
+
+<section>
+
+<h2 class="section-title">Facilities</h2>
+
+<div class="fac-grid">
+
+<div class="fac">Modern Weight Machines</div>
+<div class="fac">Cardio Equipment</div>
+<div class="fac">Personal Trainers</div>
+<div class="fac">Muscle Gain Programs</div>
+<div class="fac">Weight Loss Training</div>
+<div class="fac">Locker & Water Facility</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section>
+
+<h2 class="section-title">Gym Gallery</h2>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001ab">
+
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BMI -->
+
+<section>
+
+<h2 class="section-title">BMI Calculator</h2>
+
+<div style="text-align:center">
+
+<input id="weight" placeholder="Weight (kg)">
+
+<input id="height" placeholder="Height (cm)">
+
+<br>
+
+<button onclick="calc()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div style="text-align:center">
+
+<a href="tel:+918452913089" class="contact-btn">Call</a>
+
+<a href="https://wa.me/918452913089" class="contact-btn">WhatsApp</a>
+
+</div>
+
+<div style="margin-top:30px">
+
+<iframe
+src="https://maps.google.com/maps?q=Mahagama%20Jharkhand&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Fitness Garage Gym</p>
+
+</footer>
+
+<script>
+
+function calc(){
+
+let w=document.getElementById("weight").value
+let h=document.getElementById("height").value/100
+
+let bmi=(w/(h*h)).toFixed(2)
+
+document.getElementById("result").innerHTML="Your BMI is "+bmi
+
+}
+
+</script>
+
+</body>
+</html>
